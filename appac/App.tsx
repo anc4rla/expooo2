@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>ana carla s2 . *.</Text>
-      <StatusBar style="auto" />
+      <View style={styles.box1}>
+        <Text>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text>Box 2</Text>
+      </View>
     </View>
   );
 }
@@ -13,8 +18,23 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'pink',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f0f0f0'
+  },
+  box1: {
+    width:100,
+    height: 100,
+    backgroundColor: 'lightblue',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 20
+  },
+  box2: {
+    width: 100,
+    height: 100,
+    backgroundColor: 'lightcoral',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
 });
